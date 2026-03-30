@@ -164,6 +164,7 @@ Layout:
 - Bố cục dọc, trung tâm là chủ đạo
 - Tăng khoảng thở theo nhịp section rõ ràng
 - Hero -> mô tả -> benefits -> form -> cam kết/social-proof
+- Trang /thank-you phải dùng cùng lớp nền (mystical-surface + texture + nebula), cùng hệ màu và nhịp typography với trang /
 
 Background treatment:
 
@@ -174,8 +175,9 @@ Background treatment:
 Form & CTA:
 
 - Form shell: viền vàng đồng mảnh, nền tối trong mờ
-- Inputs: border mảnh gold, placeholder off-white dịu
-- CTA "Nhận Cẩm Nang Ngay": nền champagne gold, glow nhẹ, độ tương phản cao
+- Form block được tách khoảng cách rõ hơn so với cụm benefits phía trên, có shell cao và lớn hơn để tạo điểm nhấn
+- Inputs: border mảnh gold, placeholder off-white dịu, chiều cao và padding lớn vừa phải để dễ thao tác; khoảng thở bên trong form phải rộng rãi
+- CTA "Nhận Cẩm Nang Ngay": nền champagne gold, kích thước nổi bật nhưng cân đối với input, glow nhẹ, độ tương phản cao
 
 Test compatibility constraints:
 

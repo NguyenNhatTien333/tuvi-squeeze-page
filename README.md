@@ -5,6 +5,7 @@ A high-end mystical astrology lead capture system built with Next.js 14, featuri
 ## ✨ Features
 
 - **Luxury Mystical Theme** - Dark graphite silk background, champagne-gold highlights, and subtle nebula depth
+- **Unified Page Aesthetic** - Home and Thank-you pages now share one visual language (mystical-surface + texture + nebula)
 - **Optimized Particles Background** - Framer Motion powered particle effects for 90+ Lighthouse score
 - **Lead Capture Form** - React Hook Form with Zod validation
 - **Email Automation** - Resend integration for instant email delivery
@@ -133,9 +134,12 @@ mystical: {
 
 - Long vertical center-led layout with larger spacing rhythm
 - Layered dark background with texture and low-opacity star-map feel
+- Thank-you page follows the same shell, type scale, and color hierarchy as the home page
+- Opt-in form block sits with clearer spacing after benefits and uses a taller, larger shell for stronger emphasis
 - Clean, icon-free edge treatment for a focused hero/form flow
 - Thin gold borders for form controls and shell
-- Primary CTA uses champagne-gold fill with a restrained glow
+- Name and email inputs use balanced large sizing and padding for improved readability and touch targets
+- Primary CTA uses champagne-gold fill, moderate large sizing, and a restrained glow to remain the dominant action
 
 ### Countdown Duration
 
@@ -156,9 +160,10 @@ Edit `src/app/api/subscribe/route.ts` to customize the email HTML.
 - [ ] Countdown persists across page refreshes
 - [ ] Expired state displays after 15 minutes
 - [ ] Duplicate email updates instead of creates new record
-- [ ] Responsive design on mobile/tablet/desktop
+- [ ] Responsive design on mobile/tablet/desktop for both `/` and `/thank-you`
 - [ ] YouTube video loads correctly
 - [ ] Lighthouse score > 90
+- [ ] Thank-you visual consistency: same mystical background layers, gold title hierarchy, and panel treatment as home
 
 ## 🚀 Deployment
 

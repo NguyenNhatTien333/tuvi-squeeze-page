@@ -133,9 +133,20 @@ npm run dev
    - ✅ Nền không còn đen phẳng, có chiều sâu (texture + nebula)
    - ✅ 3 dòng lợi ích hiển thị gold-muted
    - ✅ Viền input mảnh màu vàng đồng, focus ring dịu
-   - ✅ Nút "Nhận Cẩm Nang Ngay" là phần nổi bật nhất
+   - ✅ Khối form tách rõ khỏi cụm benefits phía trên, cao hơn và nổi bật hơn về tổng thể
+   - ✅ Ô nhập Họ tên và Email có kích thước lớn vừa phải, dễ bấm trên mobile
+   - ✅ Nút "Nhận Cẩm Nang Ngay" nổi bật nhưng cân đối với form
    - ✅ Không còn icon trang trí ở đầu trang và cuối trang
    - ✅ Đoạn cam kết và social proof dùng off-white dễ đọc
+
+### Test 9: Thank-you Visual Sync
+1. Mở trang `/thank-you` trên mobile + desktop
+2. Kiểm tra:
+   - ✅ Nền dùng cùng hệ `mystical-surface + mystical-texture + mystical-nebula` như trang chủ
+   - ✅ Heading và highlight dùng tông champagne/gold nhất quán với trang chủ
+   - ✅ Các khối nội dung (email hướng dẫn, countdown, video) dùng shell viền vàng đồng mảnh
+   - ✅ Nút tải cẩm nang dùng style CTA vàng đồng đồng nhất
+   - ✅ Footer lời chúc hiển thị cùng hệ typography và độ tương phản với trang chủ
 
 ---
 
@@ -152,6 +163,7 @@ npm run dev
 ### 🙏 Thank You Page (/thank-you)
 - **URL**: http://localhost:3000/thank-you
 - **Features**:
+   - Shared dark-luxury visual language with home page
   - Email check instructions
   - 15-minute countdown timer
   - YouTube video embed

@@ -64,41 +64,41 @@ export function OptInForm() {
   }
 
   return (
-    <Card className="mystical-form-shell w-full max-w-lg mx-auto backdrop-blur-sm rounded-sm">
-      <CardHeader>
-        <CardTitle className="mystical-gold-title text-center font-playfair text-3xl sm:text-4xl">
+    <Card className="mystical-form-shell mx-auto min-h-[36rem] w-full max-w-2xl rounded-sm backdrop-blur-sm sm:min-h-[40rem]">
+      <CardHeader className="px-8 pb-5 pt-8 sm:px-12 sm:pb-6 sm:pt-10">
+        <CardTitle className="mystical-gold-title text-center font-playfair text-4xl leading-tight sm:text-5xl lg:text-6xl">
           Nhận Ngay Cẩm Nang Miễn Phí
         </CardTitle>
-        <CardDescription className="text-center text-lg text-mystical-offwhite/90">
+        <CardDescription className="text-center text-xl leading-relaxed text-mystical-offwhite/90 sm:text-2xl lg:text-3xl">
           Khám phá bản đồ vận mệnh của bạn qua 12 cung Tử Vi
         </CardDescription>
       </CardHeader>
-      <CardContent>
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-          <div className="space-y-2">
-            <Label htmlFor="full_name" className="text-mystical-offwhite/95">Họ và Tên *</Label>
+      <CardContent className="px-8 pb-12 sm:px-12 sm:pb-14">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 sm:space-y-7">
+          <div className="space-y-3">
+            <Label htmlFor="full_name" className="text-xl text-mystical-offwhite/95 sm:text-2xl">Họ và Tên *</Label>
             <Input
               id="full_name"
               type="text"
               placeholder="Nhập họ tên của bạn"
               {...register('full_name')}
               disabled={isSubmitting}
-              className="mystical-input h-11 rounded-none border"
+              className="mystical-input h-12 rounded-none border px-4 text-lg sm:h-14 sm:px-5 sm:text-xl"
             />
             {errors.full_name && (
               <p className="text-sm text-destructive">{errors.full_name.message}</p>
             )}
           </div>
 
-          <div className="space-y-2">
-            <Label htmlFor="email" className="text-mystical-offwhite/95">Email *</Label>
+          <div className="space-y-3">
+            <Label htmlFor="email" className="text-xl text-mystical-offwhite/95 sm:text-2xl">Email *</Label>
             <Input
               id="email"
               type="email"
               placeholder="email@example.com"
               {...register('email')}
               disabled={isSubmitting}
-              className="mystical-input h-11 rounded-none border"
+              className="mystical-input h-12 rounded-none border px-4 text-lg sm:h-14 sm:px-5 sm:text-xl"
             />
             {errors.email && (
               <p className="text-sm text-destructive">{errors.email.message}</p>
@@ -107,12 +107,12 @@ export function OptInForm() {
 
           <Button
             type="submit"
-            className="mystical-cta w-full h-11 rounded-none font-semibold tracking-wide"
+            className="mystical-cta h-12 w-full rounded-none text-lg font-semibold tracking-wide shadow-[0_0_18px_rgba(228,197,116,0.18)] sm:h-14 sm:text-xl"
             disabled={isSubmitting}
           >
             {isSubmitting ? (
               <>
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                <Loader2 className="mr-2 h-4 w-4 animate-spin sm:h-5 sm:w-5" />
                 Đang xử lý...
               </>
             ) : (
@@ -120,7 +120,7 @@ export function OptInForm() {
             )}
           </Button>
 
-          <p className="text-center text-xs leading-relaxed text-mystical-offwhite/78 sm:text-sm">
+          <p className="text-center text-base leading-relaxed text-mystical-offwhite/78 sm:text-lg">
             Chúng tôi tôn trọng quyền riêng tư của bạn. Email của bạn sẽ được bảo mật tuyệt đối.
           </p>
         </form>

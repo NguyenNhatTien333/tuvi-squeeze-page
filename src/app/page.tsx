@@ -47,13 +47,13 @@ export default function Home() {
         </section>
 
         {/* Opt-in Form */}
-        <section className="w-full max-w-lg">
+        <section className="mt-10 w-full max-w-2xl sm:mt-16">
           <OptInForm />
         </section>
 
         {/* Footer Note */}
         <p className="mx-auto mt-12 max-w-xl text-center text-xl leading-relaxed text-mystical-offwhite/88 sm:mt-16 sm:text-4xl">
-          Hơn <span className="font-semibold text-mystical-champagne">10,000+</span> học viên
+          Hơn <span className="font-semibold text-mystical-champagne">3,999+</span> học viên
           đã nhận cẩm nang và bắt đầu hành trình làm chủ vận mệnh
         </p>
       </main>
