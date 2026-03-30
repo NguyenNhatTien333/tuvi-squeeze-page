@@ -82,7 +82,7 @@ Nếu còn thời gian: Hiển thị đồng hồ đếm ngược mượt mà.
 
 5. COPYWRITING EMAIL (PHONG CÁCH HUYỀN HỌC)
 
-Subject: 🎁 Quà tặng: Cẩm Nang Tử Vi "Thấu Thị Thiên Mệnh" của bạn đã tới!
+Subject: 🎁 Quà tặng: Cẩm Nang Tử Vi "Tự đọc lá số" của bạn đã tới!
 
 Nội dung HTML:
 
@@ -90,7 +90,7 @@ Chào {full_name},
 
 Giữa muôn vàn nhân duyên, cảm ơn bạn đã chọn dừng chân tại Nghiên cứu Tử Vi. Tài liệu mà bạn mong chờ không chỉ là kiến thức, mà là chiếc chìa khóa nhỏ giúp bạn thấu hiểu bản đồ vận mệnh của chính mình.
 
-📜 [Link Tải Cẩm Nang Giải Mã 12 Cung Chức]
+📜 [Link Tải Cẩm Nang Tự đọc lá số]
 
 Lưu ý: Sau khi xem xong cẩm nang, hãy quay lại trang "Duyên Lành" để không bỏ lỡ lộ trình 7 ngày làm chủ lá số đang được trợ duyên đặc biệt.
 
