@@ -64,26 +64,26 @@ export function OptInForm() {
   }
 
   return (
-    <Card className="w-full max-w-md mx-auto bg-card/50 backdrop-blur-sm border-mystical-accent/20">
+    <Card className="mystical-form-shell w-full max-w-lg mx-auto backdrop-blur-sm rounded-sm">
       <CardHeader>
-        <CardTitle className="text-2xl font-playfair text-center text-mystical-accent">
+        <CardTitle className="mystical-gold-title text-center font-playfair text-3xl sm:text-4xl">
           Nhận Ngay Cẩm Nang Miễn Phí
         </CardTitle>
-        <CardDescription className="text-center text-muted-foreground">
+        <CardDescription className="text-center text-lg text-mystical-offwhite/90">
           Khám phá bản đồ vận mệnh của bạn qua 12 cung Tử Vi
         </CardDescription>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="full_name">Họ và Tên *</Label>
+            <Label htmlFor="full_name" className="text-mystical-offwhite/95">Họ và Tên *</Label>
             <Input
               id="full_name"
               type="text"
               placeholder="Nhập họ tên của bạn"
               {...register('full_name')}
               disabled={isSubmitting}
-              className="bg-background/50"
+              className="mystical-input h-11 rounded-none border"
             />
             {errors.full_name && (
               <p className="text-sm text-destructive">{errors.full_name.message}</p>
@@ -91,14 +91,14 @@ export function OptInForm() {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="email">Email *</Label>
+            <Label htmlFor="email" className="text-mystical-offwhite/95">Email *</Label>
             <Input
               id="email"
               type="email"
               placeholder="email@example.com"
               {...register('email')}
               disabled={isSubmitting}
-              className="bg-background/50"
+              className="mystical-input h-11 rounded-none border"
             />
             {errors.email && (
               <p className="text-sm text-destructive">{errors.email.message}</p>
@@ -107,7 +107,7 @@ export function OptInForm() {
 
           <Button
             type="submit"
-            className="w-full bg-mystical-accent hover:bg-mystical-glow text-mystical-dark font-semibold"
+            className="mystical-cta w-full h-11 rounded-none font-semibold tracking-wide"
             disabled={isSubmitting}
           >
             {isSubmitting ? (
@@ -120,7 +120,7 @@ export function OptInForm() {
             )}
           </Button>
 
-          <p className="text-xs text-center text-muted-foreground">
+          <p className="text-center text-xs leading-relaxed text-mystical-offwhite/78 sm:text-sm">
             Chúng tôi tôn trọng quyền riêng tư của bạn. Email của bạn sẽ được bảo mật tuyệt đối.
           </p>
         </form>

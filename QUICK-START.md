@@ -9,6 +9,8 @@
 ✓ Build thành công không lỗi  
 ✓ Dev server đang chạy tại **http://localhost:3000**
 
+✓ Theme dark-luxury đã áp dụng (texture + nebula + gold system)
+
 ---
 
 ## 🔧 CẤU HÌNH BẮT BUỘC
@@ -124,6 +126,17 @@ npm run dev
    - ✅ Record được UPDATE (không tạo duplicate)
    - ✅ `updated_at` thay đổi
 
+### Test 8: Visual QA (Dark Luxury)
+1. Mở trang chủ trên mobile + desktop
+2. Kiểm tra:
+   - ✅ Tiêu đề chính hiển thị tông vàng đồng/champagne
+   - ✅ Nền không còn đen phẳng, có chiều sâu (texture + nebula)
+   - ✅ 3 dòng lợi ích hiển thị gold-muted
+   - ✅ Viền input mảnh màu vàng đồng, focus ring dịu
+   - ✅ Nút "Nhận Cẩm Nang Ngay" là phần nổi bật nhất
+   - ✅ Không còn icon trang trí ở đầu trang và cuối trang
+   - ✅ Đoạn cam kết và social proof dùng off-white dễ đọc
+
 ---
 
 ## 🎨 PAGES & ROUTES
@@ -219,6 +232,12 @@ trang_ban_kh/
 ├── tailwind.config.ts                 ← Theme config
 └── README.md                          ← Full docs
 ```
+
+## ✍️ Typography System
+
+- Heading: Playfair Display (`font-playfair`)
+- Body: Be Vietnam Pro (`font-bevietnam`)
+- Mục tiêu: giữ thần thái cổ điển trang trọng ở heading, đồng thời đảm bảo khả năng đọc tiếng Việt tốt ở phần nội dung dài
 
 ---
 

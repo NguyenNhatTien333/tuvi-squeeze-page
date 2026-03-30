@@ -139,3 +139,51 @@ RESEND_API_KEY=re_BfWWjDgj_4ekNBePHPzAFXy59fcjM9dt9
 NEXT_PUBLIC_PDF_DOWNLOAD_URL=https://docs.google.com/document/d/1MtBhKLglpRVH8suvIRsF15oN6oRWLSYMLrN3r4xZ5yA/edit?tab=t.0
 
 Hãy viết mã nguồn chi tiết cho từng file theo đúng cấu trúc thư mục src/ đã nêu."
+
+7. UI SYSTEM V2 (DARK LUXURY MYSTICAL)
+
+Mục tiêu thiết kế:
+
+Giữ nguyên toàn bộ nội dung tiếng Việt hiện có, nâng cấp bố cục và mỹ thuật theo phong cách cao cấp, bí ẩn, cổ điển phương Đông.
+
+Typography:
+
+- Headings: Playfair Display (serif cổ điển)
+- Body: Be Vietnam Pro (sans-serif hiện đại, dễ đọc tiếng Việt)
+
+Color tokens:
+
+- Nền chính: dark graphite/silk
+- Heading + CTA accent: champagne gold
+- Body text: off-white
+- Secondary accent: gold-muted
+- Nebula tints: violet + teal (opacity thấp)
+
+Layout:
+
+- Bố cục dọc, trung tâm là chủ đạo
+- Tăng khoảng thở theo nhịp section rõ ràng
+- Hero -> mô tả -> benefits -> form -> cam kết/social-proof
+
+Background treatment:
+
+- Nền tối nhiều lớp (gradient + texture + nebula corners)
+- Overlay pattern chìm gợi bát quái/bản đồ sao ở opacity thấp
+- Particle animation chuyển động chậm, tinh tế
+
+Form & CTA:
+
+- Form shell: viền vàng đồng mảnh, nền tối trong mờ
+- Inputs: border mảnh gold, placeholder off-white dịu
+- CTA "Nhận Cẩm Nang Ngay": nền champagne gold, glow nhẹ, độ tương phản cao
+
+Test compatibility constraints:
+
+- Không thay đổi nội dung văn bản đang được test truy vấn
+- ParticlesBg phải giữ container class fixed + pointer-events-none
+- ParticlesBg vẫn giữ đúng 25 particles
+- Không thay đổi nhãn form và button text đã được test
+
+Documentation sync:
+
+- README và QUICK-START phải phản ánh typography mới, màu mới, visual QA checklist

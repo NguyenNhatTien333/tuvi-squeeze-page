@@ -37,8 +37,100 @@
     border-color: hsl(var(--border));
   }
   body {
-    background-color: #0F1115;
-    color: hsl(var(--foreground));
+    background-color: #0f1115;
+    background-image:
+      radial-gradient(circle at 10% 12%, rgba(62, 43, 95, 0.28), transparent 38%),
+      radial-gradient(circle at 88% 8%, rgba(21, 58, 68, 0.24), transparent 42%),
+      radial-gradient(circle at 50% 120%, rgba(212, 175, 55, 0.08), transparent 50%),
+      linear-gradient(180deg, #090c12 0%, #0b0f17 48%, #0a0d14 100%);
+    color: #e7e4dc;
     font-feature-settings: "rlig" 1, "calt" 1;
+    letter-spacing: 0.01em;
+  }
+
+  ::selection {
+    background: rgba(212, 175, 55, 0.24);
+    color: #f4efe3;
+  }
+}
+
+@layer components {
+  .mystical-surface {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .mystical-texture::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    opacity: 0.12;
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(198, 170, 96, 0.15), transparent 28%),
+      radial-gradient(circle at 82% 24%, rgba(198, 170, 96, 0.12), transparent 24%),
+      repeating-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02) 0, rgba(255, 255, 255, 0.02) 1px, transparent 1px, transparent 22px),
+      linear-gradient(35deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
+    pointer-events: none;
+  }
+
+  .mystical-nebula::after {
+    content: "";
+    position: absolute;
+    inset: -18% -10% auto;
+    height: 56%;
+    z-index: -1;
+    opacity: 0.42;
+    filter: blur(34px);
+    background:
+      radial-gradient(circle at 8% 20%, rgba(62, 43, 95, 0.4), transparent 36%),
+      radial-gradient(circle at 90% 8%, rgba(21, 58, 68, 0.35), transparent 40%);
+    pointer-events: none;
+  }
+
+  .mystical-gold-title {
+    color: #e4c574;
+    text-shadow: 0 0 18px rgba(212, 175, 55, 0.25);
+  }
+
+  .mystical-body-copy {
+    color: rgba(231, 228, 220, 0.9);
+  }
+
+  .mystical-chip {
+    border: 1px solid rgba(212, 175, 55, 0.26);
+    background: linear-gradient(180deg, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.03));
+    color: rgba(228, 197, 116, 0.9);
+  }
+
+  .mystical-form-shell {
+    border: 1px solid rgba(212, 175, 55, 0.34);
+    background: linear-gradient(180deg, rgba(12, 15, 22, 0.92), rgba(9, 12, 20, 0.8));
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.36);
+  }
+
+  .mystical-input {
+    border-color: rgba(212, 175, 55, 0.42);
+    background: rgba(10, 13, 20, 0.76);
+    color: rgba(231, 228, 220, 0.96);
+  }
+
+  .mystical-input::placeholder {
+    color: rgba(231, 228, 220, 0.52);
+  }
+
+  .mystical-input:focus-visible {
+    border-color: rgba(228, 197, 116, 0.85);
+    box-shadow: 0 0 0 1px rgba(228, 197, 116, 0.85), 0 0 16px rgba(212, 175, 55, 0.18);
+  }
+
+  .mystical-cta {
+    background: linear-gradient(180deg, #e4c574 0%, #d4af37 100%);
+    color: #111218;
+    box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.48), 0 0 24px rgba(212, 175, 55, 0.28);
+  }
+
+  .mystical-cta:hover {
+    background: linear-gradient(180deg, #eed59a 0%, #debb56 100%);
   }
 }

@@ -1,10 +1,10 @@
 # 🔮 Nghiên cứu Tử Vi - Lead Capture System
 
-A mystical astrology lead capture system built with Next.js 14, featuring persistent countdown timers, email automation, and optimized particle background effects.
+A high-end mystical astrology lead capture system built with Next.js 14, featuring luxury dark visuals, persistent countdown timers, email automation, and optimized particle background effects.
 
 ## ✨ Features
 
-- **Mystical Dark Theme** - Beautiful dark theme with golden accents (#0F1115)
+- **Luxury Mystical Theme** - Dark graphite silk background, champagne-gold highlights, and subtle nebula depth
 - **Optimized Particles Background** - Framer Motion powered particle effects for 90+ Lighthouse score
 - **Lead Capture Form** - React Hook Form with Zod validation
 - **Email Automation** - Resend integration for instant email delivery
@@ -23,7 +23,7 @@ A mystical astrology lead capture system built with Next.js 14, featuring persis
 - **Email**: Resend
 - **Animations**: Framer Motion
 - **Form Handling**: React Hook Form + Zod
-- **Fonts**: Playfair Display (headings) + Inter (body)
+- **Fonts**: Playfair Display (headings) + Be Vietnam Pro (body)
 
 ## 📋 Prerequisites
 
@@ -117,12 +117,25 @@ src/
 Edit `tailwind.config.ts` to customize the mystical theme:
 ```typescript
 mystical: {
-  dark: "#0F1115",      // Main background
-  darker: "#0A0A0C",    // Darker sections
-  accent: "#D4AF37",    // Gold accent
-  glow: "#FFD700",      // Bright gold
+   dark: "#0F1115",          // Main dark base
+   graphite: "#0B0D12",      // Deep graphite
+   silk: "#111521",          // Layered surface tone
+   offwhite: "#E7E4DC",      // Primary body copy
+   gold: "#D4AF37",          // Core luxury accent
+   champagne: "#E4C574",     // Headings + CTA highlight
+   goldMuted: "#C6AA60",     // Secondary chips and icons
+   nebulaViolet: "#3E2B5F",  // Corner nebula tint
+   nebulaTeal: "#153A44",    // Corner nebula tint
 }
 ```
+
+### Visual Language
+
+- Long vertical center-led layout with larger spacing rhythm
+- Layered dark background with texture and low-opacity star-map feel
+- Clean, icon-free edge treatment for a focused hero/form flow
+- Thin gold borders for form controls and shell
+- Primary CTA uses champagne-gold fill with a restrained glow
 
 ### Countdown Duration
 

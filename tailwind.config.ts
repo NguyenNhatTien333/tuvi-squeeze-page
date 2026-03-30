@@ -15,8 +15,16 @@ const config: Config = {
         mystical: {
           dark: "#0F1115",
           darker: "#0A0A0C",
+          graphite: "#0B0D12",
+          silk: "#111521",
           accent: "#D4AF37",
+          gold: "#D4AF37",
+          champagne: "#E4C574",
+          goldMuted: "#C6AA60",
+          offwhite: "#E7E4DC",
           glow: "#FFD700",
+          nebulaViolet: "#3E2B5F",
+          nebulaTeal: "#153A44",
         },
         card: {
           DEFAULT: "hsl(var(--card))",
@@ -59,7 +67,10 @@ const config: Config = {
       },
       fontFamily: {
         playfair: ["var(--font-playfair)", "serif"],
-        inter: ["var(--font-inter)", "sans-serif"],
+        bevietnam: ["var(--font-be-vietnam-pro)", "sans-serif"],
+      },
+      boxShadow: {
+        "gold-soft": "0 0 0 1px rgba(212, 175, 55, 0.45), 0 0 24px rgba(212, 175, 55, 0.22)",
       },
       borderRadius: {
         lg: "var(--radius)",

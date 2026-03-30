@@ -24,12 +24,12 @@ export function ParticlesBg() {
         id: i,
         x: Math.random() * 100,
         y: Math.random() * 100,
-        size: Math.random() * 3 + 1,
-        duration: Math.random() * 20 + 15,
+        size: Math.random() * 2.2 + 0.8,
+        duration: Math.random() * 25 + 24,
         delay: Math.random() * 5,
-        opacity: Math.random() * 0.2 + 0.1,
-        animX: Math.random() * 100 - 50,
-        animY: Math.random() * 100 - 50,
+        opacity: Math.random() * 0.12 + 0.06,
+        animX: Math.random() * 64 - 32,
+        animY: Math.random() * 64 - 32,
       }))
     )
   }, [])
@@ -41,7 +41,7 @@ export function ParticlesBg() {
       {particles.map((particle) => (
         <motion.div
           key={particle.id}
-          className="absolute rounded-full bg-mystical-glow"
+          className="absolute rounded-full bg-mystical-champagne"
           style={{
             width: particle.size,
             height: particle.size,
@@ -58,7 +58,7 @@ export function ParticlesBg() {
             duration: particle.duration,
             repeat: Infinity,
             delay: particle.delay,
-            ease: 'linear',
+            ease: 'easeInOut',
           }}
         />
       ))}
